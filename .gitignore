@@ -1,0 +1,20 @@
+# By default, ignore all files in root directory.
+/*.*
+
+# Exceptions
+!/*.make
+!/.gitignore
+
+# Uncomment following line if modifying .htaccess ?
+.htaccess
+
+# Ignore Drupal folders
+/includes
+/misc
+/modules
+/scripts
+/themes
+/sites
+/profiles/minimal
+/profiles/standard
+/profiles/testing
