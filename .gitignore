@@ -9,12 +9,8 @@
 .htaccess
 
 # Ignore Drupal folders
-/includes
-/misc
-/modules
-/scripts
-/themes
-/sites
 /profiles/minimal
 /profiles/standard
 /profiles/testing
+
+sites/*/settings.php
