@@ -1,0 +1,17 @@
+addtoany:
+  version: VERSION
+  js:
+    https://static.addtoany.com/menu/page.js: { attributes: { async: true }, type: external, minified: true }
+  css:
+    theme:
+      css/addtoany.css: {}
+
+addtoany.admin:
+  version: VERSION
+  js:
+    js/addtoany.admin.js: {}
+  css:
+    theme:
+      css/addtoany.admin.css: {}
+  dependencies:
+    - core/jquery

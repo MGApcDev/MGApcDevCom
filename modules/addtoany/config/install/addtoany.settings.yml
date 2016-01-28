@@ -1,0 +1,17 @@
+additional_css: ''
+additional_html: |
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_twitter"></a>
+  <a class="a2a_button_google_plus"></a>
+additional_js: ''
+buttons_size: '32'
+custom_universal_button: ''
+display_in_nodecont: '1'
+display_in_teasers: '1'
+display_weight: 10
+universal_button: 'default'
+universal_button_placement: 'before'
+nodetypes:
+  - page
+  - article
+no_3p: 0
