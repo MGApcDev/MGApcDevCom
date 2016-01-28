@@ -1,2 +1,16 @@
-body {
+body{
+    font-family: "helvetica","Arial","georgia";
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: $highlight-color;
+    }
+}
+.twitter-timeline {
+    display: none;
+    @include mq($min, $mobile) {
+        display: block;
+    }
 }
