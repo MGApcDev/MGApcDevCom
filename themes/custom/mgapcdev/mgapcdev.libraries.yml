@@ -1,0 +1,10 @@
+global-styles:
+  varsion: 1.x
+  css:
+    theme:
+      styles/build/main.min.css: {}
+global-scripts:
+  js:
+    scripts/build/main.min.js: {}
+  dependencies:
+    - core/jquery
