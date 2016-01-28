@@ -7,6 +7,7 @@ libraries:
   - mgapcdev/global-scripts
 regions:
   header: Header
+  primary_menu: Menu
   content: Content
-  sitebar_first: 'Sidebar first'
+  sidebar_first: 'Sidebar First'
   footer: Footer
