@@ -1,5 +1,6 @@
 # By default, ignore all files in root directory.
 /*.*
+error_log
 
 # Exceptions
 !/*.make
