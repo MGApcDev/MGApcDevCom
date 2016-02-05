@@ -47,10 +47,10 @@
   -o-transition: color .25s;
   transition: color .25s;
 }
-#block-mgapcdev-mainnavigation ul li a:hover {
+#block-mgapcdev-mainnavigation ul li a:hover, #block-mgapcdev-mainnavigation .is-active {
   color: #333333;
 }
-#block-mgapcdev-mainnavigation ul li a:hover:before {
+#block-mgapcdev-mainnavigation ul li a:hover:before, #block-mgapcdev-mainnavigation .is-active:before{
   width: 100%;
 }
 #block-mgapcdev-mainnavigation ul li a:after {

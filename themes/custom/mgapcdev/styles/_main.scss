@@ -1,3 +1,12 @@
-main .views-row div p img {
-    display: none;
+.layout-content {
+    max-width: 100%;
+    min-width: 60%;
+    float: left;
+}
+.layout-sidebar-first {
+    width: 30%;
+    float: right;
+}
+main:after {
+    @include clear-fix;
 }

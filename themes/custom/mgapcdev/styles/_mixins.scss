@@ -1,0 +1,7 @@
+@mixin clear-fix {
+    visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}

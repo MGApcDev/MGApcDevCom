@@ -1,0 +1,9 @@
+main .views-row div p img {
+    display: none;
+}
+article img {
+    float: left;
+}
+article:after {
+    @include clear-fix;
+}
