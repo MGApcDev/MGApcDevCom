@@ -4,6 +4,7 @@ main .views-row div p img {
 .teaser article {
     background: $white;
     margin-bottom: 15px;
+    margin-left: 10px;
     box-shadow: 0;
     transition: box-shadow 0.3s;
     border: 1px solid #eee;
@@ -12,14 +13,32 @@ main .views-row div p img {
     }
     img {
         float: none;
+        margin-right: 15px;
         @include mq($min, $mobile) {
             float: left;
         }
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 15px;
+        display: inline;
+        line-height: 25px;
+        
     }
     &:after {
         @include clear-fix;
     }
 }
+.field-title {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.field-body {
+    font-size: 14px;
+}
+
+
 .layout-content {
     max-width: 100%;
     min-width: 100%;
@@ -30,7 +49,6 @@ main .views-row div p img {
 }
 .layout-sidebar-first {
     display: none;
-    margin-top: 16px;
     @include mq($min, $tablet) {
         width: 35%;
         float: right;
