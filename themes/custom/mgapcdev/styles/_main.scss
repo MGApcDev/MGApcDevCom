@@ -1,11 +1,5 @@
-.layout-content {
-    max-width: 100%;
-    min-width: 60%;
-    float: left;
-}
-.layout-sidebar-first {
-    width: 30%;
-    float: right;
+body {
+    background: $background-main;
 }
 main:after {
     @include clear-fix;

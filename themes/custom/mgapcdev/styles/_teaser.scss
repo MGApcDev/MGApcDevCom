@@ -1,9 +1,39 @@
 main .views-row div p img {
     display: none;
 }
-article img {
-    float: left;
+.teaser article {
+    background: $white;
+    margin-bottom: 15px;
+    box-shadow: 0;
+    transition: box-shadow 0.3s;
+    border: 1px solid #eee;
+    &:hover {
+        box-shadow: 0 0 3px #515151;;
+    }
+    img {
+        float: none;
+        @include mq($min, $mobile) {
+            float: left;
+        }
+    }
+    &:after {
+        @include clear-fix;
+    }
 }
-article:after {
-    @include clear-fix;
+.layout-content {
+    max-width: 100%;
+    min-width: 100%;
+    @include mq($min, $tablet) {
+        min-width: 64%;
+        float: left;
+    }
+}
+.layout-sidebar-first {
+    display: none;
+    margin-top: 16px;
+    @include mq($min, $tablet) {
+        width: 35%;
+        float: right;
+        display: block;
+    }
 }
