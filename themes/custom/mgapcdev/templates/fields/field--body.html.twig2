@@ -41,22 +41,22 @@
   {% if multiple %}
     <div{{ attributes }}>
       {% for item in items %}
-        <div{{ item.attributes }} class="field-title">{{ item.content }}</div>
+        <div{{ item.attributes }} class="field-body">{{ item.content['#text']|striptags }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }} class="field-title">{{ item.content }}</div>
+      <div{{ attributes }} class="field-body">{{ item.content['#text']|striptags }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
   <div{{ attributes }}>
-    <div{{ title_attributes }} class="field-title">{{ label }}</div>
+    <div{{ title_attributes }} class="field-body">{{ label }}</div>
     {% if multiple %}
       <div>
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes }} class="field-title">{{ item.content }}</div>
+      <div{{ item.attributes }} class="field-body">{{ item.content['#text']|striptags }}</div>
     {% endfor %}
     {% if multiple %}
       </div>
