@@ -1,7 +1,7 @@
 // Credits for inspiration @("http://cssmenumaker.com/menu/simple-responsive-menu")
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #block-mgapcdev-mainnavigation {
-  background: #f96e5b;
+  background: $highlight-color;
   width: auto;
 }
 #block-mgapcdev-mainnavigation ul {
@@ -58,8 +58,8 @@
   display: block;
   position: absolute;
   right: -3px;
-  top: 19px;
-  height: 6px;
+  top: 23px;
+  height: 2px;
   width: 6px;
   background: #ffffff;
   opacity: .5;
@@ -79,7 +79,6 @@
   -o-transition: width .25s;
   transition: width .25s;
 }
-#block-mgapcdev-mainnavigation ul li.last > a:after,
 #block-mgapcdev-mainnavigation ul li:last-child > a:after {
   display: none;
 }
@@ -89,7 +88,6 @@
 #block-mgapcdev-mainnavigation ul li.is-active a:before {
   width: 100%;
 }
-#block-mgapcdev-mainnavigation.align-right li.last > a:after,
 #block-mgapcdev-mainnavigation.align-right li:last-child > a:after {
   display: block;
 }
@@ -106,7 +104,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-bottom: 1px solid #fb998c;
+    border-bottom: 1px solid $highlight-color;
   }
   #block-mgapcdev-mainnavigation ul li.last > a,
   #block-mgapcdev-mainnavigation ul li:last-child > a {

@@ -10,7 +10,7 @@ a {
 }
 .twitter-timeline {
     display: none;
-    @include mq($min, $mobile) {
+    @include mq($min, $tablet) {
         display: block;
     }
 }

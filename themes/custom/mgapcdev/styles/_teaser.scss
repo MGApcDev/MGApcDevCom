@@ -21,10 +21,7 @@ main .views-row div p img {
     p {
         margin: 0px;
         padding: 0px;
-        padding-top: 15px;
-        display: inline;
-        line-height: 25px;
-        
+        padding-top: 15px;        
     }
     &:after {
         @include clear-fix;
@@ -36,6 +33,16 @@ main .views-row div p img {
 }
 .field-body {
     font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    * {
+        display: inline;
+        line-height: 25px;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+    }
 }
 
 
