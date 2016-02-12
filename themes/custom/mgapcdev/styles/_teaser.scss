@@ -1,7 +1,7 @@
 main .views-row div p img {
     display: none;
 }
-.teaser article {
+.teaser > div {
     background: $white;
     margin-bottom: 15px;
     margin-left: 10px;
@@ -10,13 +10,6 @@ main .views-row div p img {
     border: 1px solid #eee;
     &:hover {
         box-shadow: 0 0 3px #515151;;
-    }
-    img {
-        float: none;
-        margin-right: 15px;
-        @include mq($min, $mobile) {
-            float: left;
-        }
     }
     p {
         margin: 0px;
@@ -27,11 +20,18 @@ main .views-row div p img {
         @include clear-fix;
     }
 }
-.field-title {
+.views-field-field-thumbnail img {
+    float: none;
+    margin-right: 15px;
+    @include mq($min, $mobile) {
+        float: left;
+    }
+}
+.views-field-title {
     font-size: 20px;
     padding: 10px 0px;
 }
-.field-body {
+.views-field-field-body {
     font-size: 14px;
     font-weight: normal;
     font-style: normal;
