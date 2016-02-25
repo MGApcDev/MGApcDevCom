@@ -119,4 +119,13 @@
 }
 nav {
   margin-bottom: 15px;
+  margin-top: -3px;
+  position: fixed;
+  width: 100% !important;
+}
+.navbar-brand {
+  float: left;
+}
+.navbar-nav {
+  float: right;
 }

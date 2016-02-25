@@ -1,6 +1,3 @@
-main .views-row div p img {
-    display: none;
-}
 .teaser > div {
     background: $white;
     margin-bottom: 15px;
@@ -14,7 +11,7 @@ main .views-row div p img {
     p {
         margin: 0px;
         padding: 0px;
-        padding-top: 15px;        
+        padding-top: 15px;
     }
     &:after {
         @include clear-fix;
@@ -45,7 +42,6 @@ main .views-row div p img {
     }
 }
 
-
 .layout-content {
     max-width: 100%;
     min-width: 100%;
@@ -62,3 +58,4 @@ main .views-row div p img {
         display: block;
     }
 }
+

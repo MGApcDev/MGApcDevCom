@@ -1,6 +1,9 @@
 body {
     background: $background-main;
 }
-main:after {
-    @include clear-fix;
+main {
+    padding-top: 44px;
+    &:after {
+        @include clear-fix;
+    }
 }
