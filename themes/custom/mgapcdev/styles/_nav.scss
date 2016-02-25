@@ -117,15 +117,21 @@
     display: none;
   }
 }
-nav {
+nav#block-mgapcdev-mainnavigation {
   margin-bottom: 15px;
   margin-top: -3px;
   position: fixed;
   width: 100% !important;
+  transition: top 0.2s ease-in-out;
+  top: 0px;
+  height: 44px;
 }
 .navbar-brand {
   float: left;
 }
 .navbar-nav {
   float: right;
+}
+.nav-up {
+  top: -44px !important;
 }
