@@ -43,10 +43,8 @@
 }
 
 .layout-content {
-    max-width: 100%;
-    min-width: 100%;
     @include mq($min, $tablet) {
-        min-width: 64%;
+        width: 100%;
         float: left;
     }
 }
@@ -56,6 +54,11 @@
         width: 35%;
         float: right;
         display: block;
+    }
+}
+.layout-sidebar-first + .layout-content {
+    @include mq($min, $tablet) {
+        width: 64%;
     }
 }
 
