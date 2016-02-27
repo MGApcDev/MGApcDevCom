@@ -1,0 +1,24 @@
+.android-emote {
+    width: 100%;
+    min-height: 150px;
+    @include mq($min, $tablet) {
+        width: 400px;
+        height: 400px;
+    }
+    background-image: url("/icon/loading.svg");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    img {
+        opacity: 0;
+        -moz-transition: opacity 1s; /* Firefox 4 */
+        -webkit-transition: opacity 1s; /* Safari and Chrome */
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+    @include transition(background-size 1s);
+    
+}
+.fade-background-svg {
+    background-size: 0px 0px;
+}
