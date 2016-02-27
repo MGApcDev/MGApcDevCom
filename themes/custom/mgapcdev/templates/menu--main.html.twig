@@ -22,6 +22,9 @@
   <li>
     <a href="/">MGApcDev</a>
   </li>
+  <li>
+    <a href="#" onclick="return false;" class="nav-burger">&#9776;</a>
+  </li>
 </ul>
 {% import _self as menus %}
 
@@ -35,9 +38,9 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul class="navbar-nav" {{ attributes }}>
+      <ul class="navbar-nav closed" {{ attributes }}>
     {% else %}
-      <ul class="navbar-nav">
+      <ul class="navbar-nav closed">
     {% endif %}
     {% for item in items %}
       <li{{ item.attributes }}>

@@ -53,12 +53,12 @@
 #block-mgapcdev-mainnavigation ul li a:hover:before, #block-mgapcdev-mainnavigation .is-active:before{
   width: 100%;
 }
-#block-mgapcdev-mainnavigation ul li a:after {
+#block-mgapcdev-mainnavigation ul:not(.navbar-brand) li a:after {
   content: "";
   display: block;
   position: absolute;
   right: -3px;
-  top: 23px;
+  top: 21px;
   height: 2px;
   width: 6px;
   background: #ffffff;
@@ -111,13 +111,13 @@
     border: 0;
   }
   #block-mgapcdev-mainnavigation ul li a:after {
-    display: none;
+    display: none !important;
   }
   #block-mgapcdev-mainnavigation ul li a:before {
-    display: none;
+    display: none !important;
   }
 }
-nav#block-mgapcdev-mainnavigation {
+#block-mgapcdev-mainnavigation {
   margin-bottom: 15px;
   margin-top: -3px;
   position: fixed;
@@ -127,11 +127,44 @@ nav#block-mgapcdev-mainnavigation {
   height: 44px;
 }
 .navbar-brand {
-  float: left;
+  background: $highlight-color;
+  @include mq($min, $tablet) {
+    float: left;
+  }
+  li:nth-child(1) {
+    float: left !important;
+  }
+  li:nth-child(2) {
+    float: right !important;
+  }
 }
 .navbar-nav {
-  float: right;
+  background: $highlight-color;
+  @include mq($min, $tablet) {
+    float: right;
+  }
+  overflow-y: hidden;
+  max-height: 300px; /* approximate max height */
+
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  &.closed {
+	max-height: 0;
+    @include mq($min, $tablet) {
+      max-height: 300px;
+    }
+  }
 }
 .nav-up {
-  top: -44px !important;
+  top: -223px !important;
+
+  @include mq($min, $tablet) {
+    top: -44px !important;
+  }
+}
+.nav-burger {
+  @include mq($min, $tablet) {
+    display: none !important;
+  }
 }
