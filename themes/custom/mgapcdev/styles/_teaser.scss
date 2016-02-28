@@ -42,23 +42,38 @@
     }
 }
 
-.layout-content {
+
+#block-views-block-content-teaser-teaser {
     @include mq($min, $tablet) {
         width: 100%;
         float: left;
     }
 }
-.layout-sidebar-first {
-    display: none;
+.twitter-timeline {
+    display: none !important;
     @include mq($min, $tablet) {
-        width: 35%;
+        width: 35% !important;
         float: right;
-        display: block;
+        display: block !important;
     }
 }
-.layout-sidebar-first + .layout-content {
+.twitter-timeline + #block-views-block-content-teaser-teaser {
     @include mq($min, $tablet) {
         width: 64%;
     }
 }
-
+#block-views-block-featured-article-featured-teaser {
+    @include mq($min, $tablet) {
+        float: right;
+    }
+    .views-field-title {
+        position: absolute;
+    }
+}
+#block-views-block-android-gallery-block-1 {
+    width: 100%;
+    @include mq($min, $tablet) {
+        float: left;
+        width: 45%;
+    }
+}

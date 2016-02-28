@@ -9,12 +9,6 @@ a {
         color: $highlight-color;
     }
 }
-.twitter-timeline {
-    display: none;
-    @include mq($min, $tablet) {
-        display: block;
-    }
-}
 main {
     padding-top: 44px;
     max-width: 1400px;

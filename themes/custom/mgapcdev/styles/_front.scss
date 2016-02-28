@@ -1,6 +1,7 @@
 .android-emote {
     width: 100%;
     min-height: 150px;
+    margin: 0 auto;
     @include mq($min, $tablet) {
         width: 400px;
         height: 400px;
