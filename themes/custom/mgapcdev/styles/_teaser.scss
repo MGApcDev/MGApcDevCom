@@ -44,12 +44,14 @@
 
 
 #block-views-block-content-teaser-teaser {
+    margin-top: 10px;
     @include mq($min, $tablet) {
         width: 100%;
         float: left;
     }
 }
 .twitter-timeline {
+    margin-top: 10px !important;
     display: none !important;
     @include mq($min, $tablet) {
         width: 35% !important;
@@ -60,20 +62,5 @@
 .twitter-timeline + #block-views-block-content-teaser-teaser {
     @include mq($min, $tablet) {
         width: 64%;
-    }
-}
-#block-views-block-featured-article-featured-teaser {
-    @include mq($min, $tablet) {
-        float: right;
-    }
-    .views-field-title {
-        position: absolute;
-    }
-}
-#block-views-block-android-gallery-block-1 {
-    width: 100%;
-    @include mq($min, $tablet) {
-        float: left;
-        width: 45%;
     }
 }

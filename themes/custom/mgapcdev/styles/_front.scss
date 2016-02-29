@@ -18,8 +18,55 @@
         transition: opacity 1s;
     }
     @include transition(background-size 1s);
-    
 }
 .fade-background-svg {
     background-size: 0px 0px;
+}
+// Android emote
+#block-views-block-android-gallery-block-1 {
+  width: 100%;
+  @include mq($min, $tablet) {
+    float: right;
+    width: 49%;
+  }
+}
+// Featured node
+#block-views-block-featured-article-featured-teaser {
+  margin-left: 10px;
+  @include mq($min, $tablet) {
+    float: left;
+  }
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  img {
+    transition: all 0.5s ease-in-out;
+    
+  }
+  &:hover {
+    .views-field-title {
+      opacity: 1;
+    }
+    img {
+      margin-top: -10px;
+      margin-left: -10px;
+      width: 620px;
+      height: 420px;
+    }
+  }
+  .views-field-title {
+    position: absolute;
+    text-align: center;
+    margin-top: 140px;
+    font-size: 30px;
+    width: 100%;
+    max-width: 600px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    @include mq($min, $tablet) {
+      width: 600px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+  }
 }
