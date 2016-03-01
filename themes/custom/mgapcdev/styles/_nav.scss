@@ -117,7 +117,9 @@
     display: none !important;
   }
 }
+// Complete custom
 #block-mgapcdev-mainnavigation {
+  z-index: 10;
   margin-bottom: 15px;
   margin-top: -3px;
   position: fixed;
