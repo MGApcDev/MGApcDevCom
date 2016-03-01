@@ -1,0 +1,66 @@
+.teaser > div {
+    background: $white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    box-shadow: 0;
+    transition: box-shadow 0.3s;
+    border: 1px solid #eee;
+    &:hover {
+        box-shadow: 0 0 3px #515151;;
+    }
+    p {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 15px;
+    }
+    &:after {
+        @include clear-fix;
+    }
+}
+.views-field-field-thumbnail img {
+    float: none;
+    margin-right: 15px;
+    @include mq($min, $mobile) {
+        float: left;
+    }
+}
+.views-field-title {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.views-field-field-body {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    * {
+        display: inline;
+        line-height: 25px;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+    }
+}
+
+
+#block-views-block-content-teaser-teaser {
+    margin-top: 10px;
+    @include mq($min, $tablet) {
+        width: 100%;
+        float: left;
+    }
+}
+.twitter-timeline {
+    margin-top: 10px !important;
+    display: none !important;
+    @include mq($min, $tablet) {
+        width: 35% !important;
+        float: right;
+        display: block !important;
+    }
+}
+.twitter-timeline + #block-views-block-content-teaser-teaser {
+    @include mq($min, $tablet) {
+        width: 64%;
+    }
+}

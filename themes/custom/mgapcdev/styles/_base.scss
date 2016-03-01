@@ -1,0 +1,19 @@
+body{
+    font-family: "helvetica","Arial","georgia";
+    background: $background-main;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: $highlight-color;
+    }
+}
+main {
+    padding-top: 44px;
+    max-width: 1400px;
+    margin: 0 auto;
+    &:after {
+        @include clear-fix;
+    }
+}

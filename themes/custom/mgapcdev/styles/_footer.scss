@@ -1,0 +1,49 @@
+nav#block-footer {
+    background: #222;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    list-style: none;
+    > ul {
+        margin-left: 2%;
+        padding: 0;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    li {
+        display: inline-block;
+        width: 100%;
+        margin: 35px 2%;
+        a {
+            background-repeat: no-repeat;
+            background-size: 75px 75px;
+            padding-left: 90px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @include mq($min, $tablet) {
+            width: 44%;
+        }
+    }
+    .icon-github {
+        background-image: url("/icon/github-icon.png");
+    }
+    .icon-twitter {
+        background-image: url("/icon/twitter-icon.png");
+    }
+    .icon-linkedin {
+        background-image: url("/icon/linkedin-icon.png");
+    }
+    .icon-steam {
+        background-image: url("/icon/steam-icon.png");
+    }
+    .icon-youtube {
+        background-image: url("/icon/youtube-icon.png");
+    }
+    .icon-facebook {
+        background-image: url("/icon/facebook-icon.png");
+    }
+    .icon-googleplus {
+        background-image: url("/icon/googleplus-icon.png");
+    }
+}

@@ -1,5 +1,6 @@
 # By default, ignore all files in root directory.
 /*.*
+error_log
 
 # Exceptions
 !/*.make
@@ -7,10 +8,16 @@
 
 # Uncomment following line if modifying .htaccess ?
 .htaccess
-sites/default/files/*
+
 # Ignore Drupal folders
 /profiles/minimal
 /profiles/standard
 /profiles/testing
 
+# DB settings
 sites/*/settings.php
+sites/*/files/
+
+# Cache files
+.sass-cache
+.sass-cache/*
