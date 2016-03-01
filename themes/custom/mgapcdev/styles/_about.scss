@@ -1,0 +1,36 @@
+.about-profile-image {
+  width: 100%;
+  @include mq($min, $tablet) {
+    width: 500px;
+    float: right;
+    margin-left: 10px;
+  }
+  shape-outside: url("http://mgapcdev.com/sites/default/files/inline-images/profile_feature2.png");
+  shape-image-threshold: 0.5;
+  shape-margin: 10px;
+}
+.about-profile-text {
+  margin-left: 20px;
+  padding-top: 10px;
+  width: auto;
+  
+}
+// Switch position of image and text.
+.about-article {
+  display: table;
+  .about-profile-image {
+    display: table-footer-group;
+    @include mq($min, $tablet) {
+      display: block;
+    }
+  }
+  .about-profile-text {
+    display: table-header-group;
+    @include mq($min, $tablet) {
+      display: block;
+    }
+  }
+  @include mq($min, $tablet) {
+    display: block;
+  }
+}

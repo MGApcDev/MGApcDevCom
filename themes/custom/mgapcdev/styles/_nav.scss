@@ -39,7 +39,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
+  @include mq($min, $tablet) {
+    font-size: 14px;
+  }
   position: relative;
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
@@ -159,10 +162,10 @@
   }
 }
 .nav-up {
-  top: -223px !important;
+  top: -254px !important;
 
   @include mq($min, $tablet) {
-    top: -44px !important;
+    top: -51px !important;
   }
 }
 .nav-burger {
