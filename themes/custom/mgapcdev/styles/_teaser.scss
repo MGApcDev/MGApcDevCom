@@ -64,3 +64,16 @@
         width: 64%;
     }
 }
+#github-widget {
+  .gha-gravatar {
+    // display: none;
+  }
+  display: none !important;
+  @include mq($min, $tablet) {
+    display: block !important;
+    width: calc(100% - 570px) !important;
+    margin-left: 40px;
+  }
+  
+}
+
