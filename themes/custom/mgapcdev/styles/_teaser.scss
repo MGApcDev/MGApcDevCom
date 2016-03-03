@@ -66,8 +66,18 @@
 }
 #github-widget {
   .gha-gravatar {
-    // display: none;
+    display: none;
+    @include mq($min, 1050px) {
+      display: block;
+    }
   }
+  .gha-github-icon {
+    display: none;
+    @include mq($min, 950px) {
+      display: block;
+    }
+  }
+  
   display: none !important;
   @include mq($min, $tablet) {
     display: block !important;
