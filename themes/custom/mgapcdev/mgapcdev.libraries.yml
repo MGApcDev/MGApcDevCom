@@ -12,3 +12,4 @@ global-scripts:
     scripts/build/main.min.js: {}
   dependencies:
     - core/jquery
+    - core/drupalSettings
