@@ -5,6 +5,7 @@
 	clear: both;
 	height: 0;
 }
+// Credit to @(http://codepen.io/sawmac/pen/cayhK/)
 @mixin transition($transition...) {
     -moz-transition:    $transition;
     -o-transition:      $transition;
