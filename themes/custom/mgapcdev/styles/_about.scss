@@ -1,5 +1,6 @@
 .about-profile-image {
-  width: 100%;
+  width: 74%;
+  margin: 0 auto;
   @include mq($min, $tablet) {
     width: 500px;
     float: right;
