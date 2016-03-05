@@ -1,9 +1,14 @@
 #article, #project {
     img {
-        width: 95%;
-        margin: 0 auto;
+        width: 94%;
+        margin: 0 3%;
         @include mq($min, $tablet) {
-          max-width: 600px; 
+            max-width: 600px;
+            margin: 0 calc(50% - 300px)
         }
     }
+}
+figcaption {
+    text-align: center;
+    font-style: italic;
 }
