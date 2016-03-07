@@ -2,8 +2,7 @@
 #block-androidgallery {
   width: 100%;
   overflow: hidden;
-  @include aspect-ratio(600, 400);
-
+  @include aspect-ratio(580, 380);
   @include mq($min, $tablet) {
     float: right;
     width: 49%;
