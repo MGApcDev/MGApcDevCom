@@ -2,13 +2,14 @@
 #block-androidgallery {
   width: 100%;
   overflow: hidden;
-  @include aspect-ratio(580, 380);
   @include mq($min, $tablet) {
     float: right;
     width: 49%;
   }
 }
 .android-emote {
+  @include aspect-ratio(580, 380);
+
   width: 100%;
   height: auto;
   margin: 0 auto;
