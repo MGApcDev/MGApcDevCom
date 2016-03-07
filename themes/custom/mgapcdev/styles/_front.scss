@@ -1,78 +1,90 @@
-.android-emote {
-    width: 100%;
-    min-height: 150px;
-    margin: 0 auto;
-    @include mq($min, $tablet) {
-        width: 400px;
-        height: 400px;
-    }
-    background-image: url("/icon/loading.svg");
-    background-size: 150px 150px;
-    background-repeat: no-repeat;
-    background-position: center;
-    img {
-        opacity: 0;
-        -moz-transition: opacity 1s; /* Firefox 4 */
-        -webkit-transition: opacity 1s; /* Safari and Chrome */
-        -o-transition: opacity 1s;
-        transition: opacity 1s;
-    }
-    @include transition(background-size 1s);
-}
-.fade-background-svg {
-    background-size: 0px 0px;
-}
-// Android emote
+// Android node.
 #block-androidgallery {
   width: 100%;
+  overflow: hidden;
+  @include aspect-ratio(600, 400);
+
   @include mq($min, $tablet) {
     float: right;
     width: 49%;
   }
 }
-// Featured node
+.android-emote {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  @include mq($min, $tablet) {
+      max-width: 400px;
+      max-height: 400px;
+  }
+  background-image: url("/icon/loading.svg");
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  img {
+    height: 100%;
+    opacity: 0;
+    @include transition(opacity 1s);
+  }
+  @include transition(background-size 1s);
+}
+.fade-background-svg {
+    background-size: 0px 0px;
+}
+
+
+// Featured node.
 #block-views-block-featured-article-featured-teaser {
   margin-left: 10px;
+  width: calc(100% - 12px);
   @include mq($min, $tablet) {
     float: left;
+    width: calc(49% - 12px);
+    max-height: 380px;
+    max-width: 580px;
   }
-  border: 10px solid white;
+  border: 5px solid white;
   border-radius: 10px;
-  width: 580px;
-  height: 380px;
+  
   overflow: hidden;
   img {
     transition: all 0.5s ease-in-out;
-    
+    height: auto;
+    width: 100%;
   }
   &:hover {
     .views-field-title {
       opacity: 1;
     }
     img {
-      margin-top: -10px;
-      margin-left: -10px;
-      width: 620px;
-      height: 420px;
+      margin-top: -2%;
+      margin-left: -2%;
+      width: 104%;
     }
   }
   .views-field-title {
+    top: 51px;
     position: absolute;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 100px;
     font-size: 30px;
-    width: 100%;
+    width: 99%;
     max-width: 600px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     color: white;
-    @include mq($min, $tablet) {
-      width: 600px;
-      text-shadow:
+    text-shadow:
         -2px -2px 0 #000,  
          2px -2px 0 #000,
         -2px  2px 0 #000,
          2px  2px 0 #000;
+    @include mq($min, $tablet) {
+      top: 44px;
+      width: calc(49% - 12px);
     }
+  }
+  .views-field-field-thumbnail img {
+    margin-right: 0;
   }
 }
