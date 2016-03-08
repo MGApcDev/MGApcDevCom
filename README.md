@@ -9,6 +9,7 @@ For the site I'm using a custom theme, it's likely not very interesting for othe
 
 ## Installation
 1. Download the repo to server or local environent: `git clone https://github.com/MGApcDev/MGApcDevCom.git`
+
 2. Copy default.settings.php and rename it to -> settings.php and add database properties
 3. Create database:
 
