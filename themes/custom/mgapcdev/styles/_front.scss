@@ -1,8 +1,10 @@
 // Android node.
 #block-androidgallery {
   width: 100%;
-  max-height: 400px;
+  clear: both;
   @include mq($min, $tablet) {
+    max-height: 400px;
+    clear: none;
     @include aspect-ratio(600, 400);
 
     float: right;
@@ -88,11 +90,13 @@
   }
   .views-field-title {
     top: 51px;
-    //position: absolute;
+    position: absolute;
+    padding-top: 20%;
     text-align: center;
     
     font-size: 30px;
-    width: 99%;
+    width: 100%;
+    max-width: 600px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     color: white;
@@ -103,8 +107,8 @@
          2px  2px 0 #000;
     @include mq($min, $tablet) {
       top: 44px;
-      width: 49%;
-      margin-top: 100px;
+      width: 100%;
+      margin-left: -50%;
     }
   }
   .views-field-field-thumbnail img {
