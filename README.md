@@ -13,7 +13,7 @@ For the site I'm using a custom theme, it's likely not very interesting for othe
 3. Create database:
   3a. Create empty database and run through the drupal install process 
   3b. Or use existing database and copy existing files folder to: `/sites/default/`
-4. There you go --> run update.php just in case and you should be good to go
+4. There you go --> run drupal's `update.php` just in case and you should be good to go
 
 ## Usage
 Do whatever you want.. obviously my templates will only be usefull if you're using the same content types
