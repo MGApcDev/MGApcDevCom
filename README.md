@@ -11,7 +11,9 @@ For the site I'm using a custom theme, it's likely not very interesting for othe
 1. Download the repo to server or local environent: `git clone https://github.com/MGApcDev/MGApcDevCom.git`
 2. Copy default.settings.php and rename it to -> settings.php and add database properties
 3. Create database:
+
   3a. Create empty database and run through the drupal install process 
+  
   3b. Or use existing database and copy existing files folder to: `/sites/default/`
 4. There you go --> run drupal's `update.php` just in case and you should be good to go
 
