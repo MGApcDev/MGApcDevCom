@@ -9,8 +9,8 @@
 
     float: right;
     width: 49%;
-    margin-left:   25%;
-    margin-right: -25%;
+    margin-left:  -25%;
+    margin-right:  25%;
   }
   > div {
     max-width: 400px;
@@ -21,7 +21,7 @@
 .android-emote {
   height: 100%;
   @include mq($min, $tablet) {
-    margin-left: -50%;
+    margin-left: 50%;
   }
   .spinner {
     opacity: 1;
