@@ -1,79 +1,113 @@
-.android-emote {
-    width: 100%;
-    min-height: 150px;
+// Android node.
+#block-androidgallery {
+  width: 100%;
+  clear: both;
+  @include mq($min, $tablet) {
+    max-height: 400px;
+    clear: none;
+    @include aspect-ratio(600, 400);
+    float: right;
+    width: 49%;
+  }
+  > div {
+    max-width: 400px;
     margin: 0 auto;
-    @include mq($min, $tablet) {
-        width: 400px;
-        height: 400px;
-    }
+  }
+}
+.android-emote {
+  height: 100%;
+  .spinner {
+    opacity: 1;
     background-image: url("/icon/loading.svg");
     background-size: 150px 150px;
     background-repeat: no-repeat;
     background-position: center;
-    img {
-        opacity: 0;
-        -moz-transition: opacity 1s; /* Firefox 4 */
-        -webkit-transition: opacity 1s; /* Safari and Chrome */
-        -o-transition: opacity 1s;
-        transition: opacity 1s;
+
+    min-height: 150px;
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    @include mq($min, $tablet) {
+      height: 100%;
+    }    
+    @include transition(opacity 1s);
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    @include transition(opacity 1s);
+    @include mq($min, $tablet) {
+      position: absolute;
+      width: auto;
     }
-    @include transition(background-size 1s);
+  }
 }
 .fade-background-svg {
-    background-size: 0px 0px;
+  opacity: 0 !important;
 }
-// Android emote
-#block-androidgallery {
-  width: 100%;
-  @include mq($min, $tablet) {
-    float: right;
-    width: 49%;
-  }
-}
-// Featured node
+
+
+// Featured node.
 #block-views-block-featured-article-featured-teaser {
-  margin-left: 10px;
+  z-index: 5;
+  width: 100%;
+  max-height: 400px;
   @include mq($min, $tablet) {
+    @include aspect-ratio(600, 400);
     float: left;
+    width: 49%;
+    margin-left:   25%;
+    margin-right: -25%;
   }
-  border: 10px solid white;
-  border-radius: 10px;
-  width: 580px;
-  height: 380px;
-  overflow: hidden;
-  img {
-    transition: all 0.5s ease-in-out;
-    
+  > div {
+    max-width: 600px;
+    margin: 0 auto;
   }
-  &:hover {
+  //border: 5px solid white;
+  //border-radius: 10px;
+  a:hover{
     .views-field-title {
       opacity: 1;
     }
-    img {
-      margin-top: -10px;
-      margin-left: -10px;
-      width: 620px;
-      height: 420px;
+  }
+  img {
+    height: auto;
+    width: calc(100% - 10px);
+    border: 5px solid #fff;
+    border-radius: 10px;
+
+    @include mq($min, $tablet) {
+      margin-left: -50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
     }
   }
   .views-field-title {
+    top: 51px;
     position: absolute;
+    padding-top: 20%;
     text-align: center;
-    margin-top: 140px;
+
     font-size: 30px;
     width: 100%;
     max-width: 600px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     color: white;
+    text-shadow:
+      -2px -2px 0 #000,  
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000;
     @include mq($min, $tablet) {
-      width: 600px;
-      -webkit-text-stroke: 1px black;
-      text-shadow:
-        -1px -1px 0 #000,  
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+      top: 44px;
+      width: 100%;
+      margin-left: -50%;
     }
+  }
+  .views-field-field-thumbnail img {
+    margin-right: 0;
   }
 }
