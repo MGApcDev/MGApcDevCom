@@ -10,7 +10,12 @@ a {
     }
 }
 main {
-    padding-top: 44px;
+    padding-top: 51px;
+    @include mq($min, $tablet) {
+        padding-top: 44px;
+    }
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 1400px;
     margin: 0 auto;
     &:after {
