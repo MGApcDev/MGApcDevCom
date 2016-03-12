@@ -1,4 +1,4 @@
-// Credits for inspiration @("http://cssmenumaker.com/menu/simple-responsive-menu")
+// Modified, Credit to @("http://cssmenumaker.com/menu/simple-responsive-menu")
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #block-mgapcdev-mainnavigation {
   background: $highlight-color;
@@ -120,7 +120,7 @@
     display: none !important;
   }
 }
-// Complete custom
+
 #block-mgapcdev-mainnavigation {
   z-index: 10;
   margin-bottom: 15px;
