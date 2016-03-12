@@ -35,6 +35,7 @@ Do whatever you want.. obviously my templates will only be usefull if you're usi
 - **Hide nav on scroll** :arrow_right: [Medium article by Marius Craciunoiu](https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.x8e490sdf)
 
 #### Styling
+- **Main color scheme** :arrow_right: Inspired by [our little projects](http://ourlittleprojects.com/)
 - **Transition mixin** :arrow_right: [Transition mixin by David McFarland](http://codepen.io/sawmac/pen/cayhK/)
 - **Aspect Ratio mixin** :arrow_right: [Maintain Aspect Ratio Demo by Sean Dempsey](http://codepen.io/seanseansean/pen/NPwLxg)
 - **Nav bar** :arrow_right: [Simple Responsive Menu by Css Menu Maker](http://cssmenumaker.com/menu/simple-responsive-menu)
