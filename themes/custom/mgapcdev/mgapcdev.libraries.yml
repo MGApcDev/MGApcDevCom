@@ -6,7 +6,6 @@ global-styles:
       styles/build/main.min.css: {}
 global-scripts:
   js:
-    http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js: { type: external, minified: true }
     scripts/build/main.min.js: {}
   dependencies:
     - core/jquery

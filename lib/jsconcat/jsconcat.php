@@ -2,6 +2,7 @@
 $scriptPath = '/home4/mgapcdev/public_html/themes/custom/mgapcdev/scripts/';
 
 $scripts = array(
+  'vendor/mustache.min.js',
   'vendor/github-activity-0.1.4.min.js',
   'script.js',
 );
