@@ -30,6 +30,18 @@ Do whatever you want.. obviously my templates will only be usefull if you're usi
 
 ## Credits
 
+#### Code
+- **GitHub Widget** :arrow_right: [GitHub Activity Stream Widget by Casey Scarborough](https://github.com/caseyscarborough/github-activity)
+- **Hide nav on scroll** :arrow_right: [Medium article by Marius Craciunoiu](https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.x8e490sdf)
+
+#### Styling
+- **Transition mixin** :arrow_right: [Transition mixin by David McFarland](http://codepen.io/sawmac/pen/cayhK/)
+- **Aspect Ratio mixin** :arrow_right: [Maintain Aspect Ratio Demo by Sean Dempsey](http://codepen.io/seanseansean/pen/NPwLxg)
+- **Nav bar** :arrow_right: [Simple Responsive Menu by Css Menu Maker](http://cssmenumaker.com/menu/simple-responsive-menu)
+
+#### Bugs and fixes
+- **Force remove of twitter widget photos** :arrow_right: Twitter removed functionality in last update [solution found by serathium](https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
+
 #### Icons & Fonts
-- **"Work In Progress" Icon** :arrow_right:
-Check out work in progress icon designed by Gleb Khorunzhiy on the [@NounProject](https://thenounproject.com/term/work-in-progress/42732).
+- **"Work In Progress" Icon** :arrow_right: Check out work in progress icon designed by Gleb Khorunzhiy on the [@NounProject](https://thenounproject.com/term/work-in-progress/42732).
+
