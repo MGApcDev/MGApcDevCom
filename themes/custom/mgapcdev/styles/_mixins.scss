@@ -36,7 +36,7 @@
     -webkit-transition-delay: $delay;
     transition-delay:         $delay;
 }
-// Credit to @(https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/)
+// Modified, Credit to @(http://codepen.io/seanseansean/pen/NPwLxg)
 @mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
