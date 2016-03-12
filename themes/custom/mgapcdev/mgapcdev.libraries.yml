@@ -3,12 +3,9 @@ global-styles:
   css:
     theme:
       http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css: { type: external, minified: true }
-      styles/vendor/github-activity-0.1.4.min.css: {}
       styles/build/main.min.css: {}
 global-scripts:
   js:
-    http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js: { type: external, minified: true }
-    scripts/vendor/github-activity-0.1.4.min.js: {}
     scripts/build/main.min.js: {}
   dependencies:
     - core/jquery
