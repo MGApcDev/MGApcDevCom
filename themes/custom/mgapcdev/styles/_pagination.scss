@@ -1,0 +1,136 @@
+@charset "UTF-8";
+// Modified, Credit to @(http://codepen.io/lmacchiavelli/pen/KslLx)
+nav.pager li a:hover {
+  color:#000;
+}
+nav.pager li.is-active {
+  color:white; 
+}
+nav.pager a,
+nav.pager a:visited {
+  color:#555;
+}
+nav.pager li.is-active {
+  > a {
+    color: white;
+  }
+  background: rgb(53,121,214); 
+  background: -moz-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(53,121,214,1)), color-stop(91%, rgba(53,121,214,1)), color-stop(100%, rgba(27,85,157,1))); 
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -o-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -ms-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: radial-gradient(ellipse at center, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3579d6', endColorstr='#1b559d', GradientType=1); 
+}
+nav.pager li.is-active:hover {
+  cursor:default;
+  background: rgb(53,121,214); 
+  background: -moz-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(53,121,214,1)), color-stop(91%, rgba(53,121,214,1)), color-stop(100%, rgba(27,85,157,1))); 
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -o-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: -ms-radial-gradient(center, ellipse cover, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%); 
+  background: radial-gradient(ellipse at center, rgba(53,121,214,1) 0%, rgba(53,121,214,1) 91%, rgba(27,85,157,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3579d6', endColorstr='#1b559d', GradientType=1);
+}
+nav.pager li:hover {
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(196,196,196,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(196,196,196,1))); 
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(196,196,196,1) 100%); 
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(196,196,196,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(196,196,196,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(196,196,196,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#c4c4c4', GradientType=0); 
+}
+nav.pager li a {
+  cursor:pointer; 
+  line-height:20px;
+  display:block;
+  padding:5px;
+  float:left;
+  width:18px;
+  text-aling:center;
+}
+nav.pager {
+  display:block;
+  text-align: center;
+  padding:0px;
+  margin:0px;
+  font-size:.8em;
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+nav.pager ul {
+  display: inline-block;
+  margin:0px;
+  padding:10px;
+  list-style:none;
+}
+nav.pager li {
+  border:1px solid silver;
+  float:left;
+  font-weight:700;
+  margin:0 2px;
+  text-align:center;
+  border-radius: 3px; 
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px;  
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(214,214,214,1) 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(214,214,214,1))); 
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(214,214,214,1) 100%); 
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(214,214,214,1) 100%); 
+  background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(214,214,214,1) 100%); 
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(214,214,214,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d6d6d6',GradientType=0 );
+}
+nav.pager .pager__item--first a,
+nav.pager .pager__item--previous a,
+nav.pager .pager__item--next a,
+nav.pager .pager__item--last a {
+  overflow:hidden;
+  white-space:nowrap;
+  -webkit-transition-duration: 300ms;
+  -webkit-transition-property: width,text-indent,letter-spacing;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: 300ms;
+  -moz-transition-property: width,text-indent,letter-spacing;
+  -moz-transition-timing-function: ease;
+  -o-transition-duration: 300ms;
+  -o-transition-property: width,text-indent,letter-spacing;
+  -o-transition-timing-function: ease;
+}
+nav.pager a {
+  text-decoration:none; 
+}
+nav.pager .pager__item--next a:after,
+nav.pager .pager__item--last a:after {
+  content:" »";
+}
+nav.pager .pager__item--first a:before,
+nav.pager .pager__item--previous a:before {
+  content:'« '
+}
+nav.pager .pager__item--first a:hover,
+nav.pager .pager__item--previous a:hover,
+nav.pager .pager__item--next a:hover,
+nav.pager .pager__item--last a:hover {
+  width: 100px;
+  text-indent:0;
+  letter-spacing:0px;
+}
+nav.pager .pager__item--first a {
+  text-indent:+6px;
+  letter-spacing:10px;
+}
+nav.pager .pager__item--previous a {
+  text-indent:+7px;
+  letter-spacing:10px;
+}
+nav.pager .pager__item--next a {
+  text-indent:-159px;
+  letter-spacing:10px;
+}
+nav.pager .pager__item--last a {
+  text-indent:-154px;
+  letter-spacing:10px;
+}

@@ -39,6 +39,7 @@ Do whatever you want.. obviously my templates will only be usefull if you're usi
 - **Transition mixin** :arrow_right: [Transition mixin by David McFarland](http://codepen.io/sawmac/pen/cayhK/)
 - **Aspect Ratio mixin** :arrow_right: [Maintain Aspect Ratio Demo by Sean Dempsey](http://codepen.io/seanseansean/pen/NPwLxg)
 - **Nav bar** :arrow_right: [Simple Responsive Menu by Css Menu Maker](http://cssmenumaker.com/menu/simple-responsive-menu)
+- **Pagination** :arrow_right: [Pure Css3 Animated Pagination design by cssPro](http://codepen.io/lmacchiavelli/pen/KslLx)
 
 #### Bugs and fixes
 - **Force remove of twitter widget photos** :arrow_right: Twitter removed functionality in last update [solution found by serathium](https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
