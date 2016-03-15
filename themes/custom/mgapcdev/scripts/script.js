@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
-  // Taken from Medium article @(https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.yd0v5h41r)
-  // Hide Header on on scroll down
+  // Hide nav on on scroll down ---------------------------------------------------------------------------------------
+  // Taken from Medium article 
+  // @(https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.yd0v5h41r)
   var didScroll;
 
   var lastScrollTop = 0;
@@ -42,7 +43,8 @@ jQuery(document).ready(function ($) {
   });
   
   
-  // Android emote
+  // Android emote ----------------------------------------------------------------------------------------------------
+  
   // Mobile check, Credit to @(http://stackoverflow.com/a/11381730)
   window.mobilecheck = function() {
     var check = false;
@@ -73,7 +75,7 @@ jQuery(document).ready(function ($) {
     loadEmote('src="/giffy/droid-' + id + '.gif"');
   });
   
-  // Initalize github widget @(https://github.com/caseyscarborough/github-activity)
+  // Initalize github widget @(https://github.com/caseyscarborough/github-activity) -----------------------------------
   var clientId = drupalSettings.mgapcdev.github.clientId;
   var clientSecret = drupalSettings.mgapcdev.github.clientSecret;
   
@@ -85,7 +87,7 @@ jQuery(document).ready(function ($) {
     clientSecret: clientSecret,
   });
   
-  // Twitter widget hack, remove photos from being displayed, 
+  // Twitter widget hack, remove photos from being displayed ----------------------------------------------------------
   // full credit to @(https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
   jQuery('.layout-content').on('DOMSubtreeModified propertychange',"#twitter-widget-0", function() {
       jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
