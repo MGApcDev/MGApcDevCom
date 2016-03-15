@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
-  // Hide nav on on scroll down ---------------------------------------------------------------------------------------
-  // Taken from Medium article 
+  // Hide nav on on scroll down -------------------------------------------------------------------
+  // Modified, Credit to 
   // @(https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.yd0v5h41r)
   var didScroll;
 
@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
   });
   
   
-  // Android emote ----------------------------------------------------------------------------------------------------
+  // Android emote --------------------------------------------------------------------------------
   
   // Mobile check, Credit to @(http://stackoverflow.com/a/11381730)
   window.mobilecheck = function() {
@@ -56,7 +56,8 @@ jQuery(document).ready(function ($) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
   function loadEmote(property) {
-    $('.android-emote').append('<img onload="this.style.opacity=' + 1 + ';" ' + property + ' >').css('opacity', '1');
+    $('.android-emote').
+      append('<img onload="this.style.opacity=' + 1 + ';" ' + property + ' >').css('opacity', '1');
     $('.android-emote .spinner').css('position', 'absolute');
     $('.android-emote img').load(function () {
       $('.android-emote .spinner').addClass('fade-background-svg');
@@ -71,11 +72,12 @@ jQuery(document).ready(function ($) {
   $('.mobile-droid').click(function(){
     $('.android-emote .spinner').removeClass('fade-background-svg').css('position', 'relative');
     $('.android-emote img').remove();
-    var id = getRandomInt(1, 42); // <-- needs to be changed on a regular basis, until better solution is found.
+    var id = getRandomInt(1, 42); // <--
     loadEmote('src="/giffy/droid-' + id + '.gif"');
   });
   
-  // Initalize github widget @(https://github.com/caseyscarborough/github-activity) -----------------------------------
+  // Initalize github widget ----------------------------------------------------------------------
+  // Credit to @(https://github.com/caseyscarborough/github-activity)
   var clientId = drupalSettings.mgapcdev.github.clientId;
   var clientSecret = drupalSettings.mgapcdev.github.clientSecret;
   
@@ -87,8 +89,9 @@ jQuery(document).ready(function ($) {
     clientSecret: clientSecret,
   });
   
-  // Twitter widget hack, remove photos from being displayed ----------------------------------------------------------
-  // full credit to @(https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
+  // Twitter widget hack, remove photos from being displayed --------------------------------------
+  // Modified, Credit to 
+  // @(https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
   jQuery('.layout-content').on('DOMSubtreeModified propertychange',"#twitter-widget-0", function() {
       jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
       jQuery(".twitter-block").css("height", "100%");
