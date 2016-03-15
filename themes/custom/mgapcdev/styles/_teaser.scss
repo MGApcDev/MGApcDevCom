@@ -19,9 +19,9 @@
 }
 .views-field-field-thumbnail img {
     float: none;
-    margin-right: 15px;
     @include mq($min, $mobile) {
-        float: left;
+      float: left;
+      margin-right: 15px;
     }
 }
 .views-field-title {

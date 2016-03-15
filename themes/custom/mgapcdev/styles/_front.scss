@@ -25,7 +25,7 @@
     background-position: center;
 
     min-height: 150px;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 400px;
     @include mq($min, $tablet) {
       height: 100%;
@@ -91,7 +91,7 @@
     text-align: center;
 
     font-size: 30px;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 600px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
