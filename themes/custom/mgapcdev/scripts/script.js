@@ -44,7 +44,8 @@ jQuery(document).ready(function ($) {
   
   
   // Android emote --------------------------------------------------------------------------------
-  
+  var gifCount = drupalSettings.mgapcdev.android.gifCount;
+
   // Mobile check, Credit to @(http://stackoverflow.com/a/11381730)
   window.mobilecheck = function() {
     var check = false;
@@ -64,7 +65,7 @@ jQuery(document).ready(function ($) {
     });
   }
   if (!mobilecheck()) {
-    var id = getRandomInt(1, 42); // <-- needs to be changed on a regular basis, until better solution is found.
+    var id = getRandomInt(1, gifCount);
     loadEmote('src="/giffy/droid-' + id + '.gif"');
   } else {
     loadEmote('src="/giffy/droid-head.png" class="mobile-droid"');
@@ -72,7 +73,7 @@ jQuery(document).ready(function ($) {
   $('.mobile-droid').click(function(){
     $('.android-emote .spinner').removeClass('fade-background-svg').css('position', 'relative');
     $('.android-emote img').remove();
-    var id = getRandomInt(1, 42); // <--
+    var id = getRandomInt(1, gifCount);
     loadEmote('src="/giffy/droid-' + id + '.gif"');
   });
   
