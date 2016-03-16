@@ -18,15 +18,15 @@
   height: 100%;
   .spinner {
     opacity: 1;
+    z-index: -10;
     background-image: url("/icon/loading.svg");
     background-size: 150px 150px;
     background-repeat: no-repeat;
     background-position: center;
 
     min-height: 150px;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 400px;
-    position: absolute;
     @include mq($min, $tablet) {
       height: 100%;
     }    
@@ -45,8 +45,8 @@
 }
 .fade-background-svg {
   opacity: 0 !important;
+  position: absolute;
 }
-
 
 // Featured node.
 #block-views-block-featured-article-featured-teaser {
@@ -91,7 +91,7 @@
     text-align: center;
 
     font-size: 30px;
-    width: 100%;
+    width: calc(100% - 20px);
     max-width: 600px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
