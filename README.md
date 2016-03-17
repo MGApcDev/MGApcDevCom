@@ -51,4 +51,4 @@ Do whatever you want.. obviously my templates will only be usefull if you're usi
 
 ---
 
-Copyright &copy; 2015-2016 MGApcDev. Licensed under the terms of the [MIT license](LICENSE.md).
+Copyright &copy; 2016 Mathias Grundtvig Andreasen (MGApcDev). Licensed under the terms of the [MIT license](LICENSE.md).
