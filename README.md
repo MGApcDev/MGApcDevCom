@@ -49,4 +49,6 @@ Do whatever you want.. obviously my templates will only be usefull if you're usi
 #### Icons & Fonts
 - **"Work In Progress" Icon** :arrow_right: Check out work in progress icon designed by Gleb Khorunzhiy on the [@NounProject](https://thenounproject.com/term/work-in-progress/42732).
 
+---
+
 Copyright &copy; 2015-2016 Modem. Licensed under the terms of the [MIT license](LICENSE.md).
