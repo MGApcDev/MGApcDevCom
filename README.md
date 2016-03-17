@@ -1,5 +1,7 @@
 # MGApcDevCom
-My personal Drupal 8 site.
+[![Build Status](https://travis-ci.org/MGApcDev/MGApcDevCom.svg?branch=master)](https://travis-ci.org/MGApcDev/MGApcDevCom)
+
+My personal Drupal 8 site. 
 
 All relevant database login information should have been excluded, but if I've made a mistake feel free to inform me.
 
