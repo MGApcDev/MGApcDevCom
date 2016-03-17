@@ -1,5 +1,6 @@
 # MGApcDevCom
 [![Build Status](https://travis-ci.org/MGApcDev/MGApcDevCom.svg?branch=master)](https://travis-ci.org/MGApcDev/MGApcDevCom)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/39b094df1d514d6badd789488030568d)](https://www.codacy.com/app/mgapcdev/MGApcDevCom)
 
 > My personal Drupal 8 site. 
 
