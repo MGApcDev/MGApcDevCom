@@ -94,7 +94,7 @@ jQuery(document).ready(function ($) {
   // Modified, Credit to 
   // @(https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
   jQuery('.layout-content').on('DOMSubtreeModified propertychange', "#twitter-widget-0", function () {
-      jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
-      jQuery(".twitter-block").css("height", "100%");
+    jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
+    jQuery(".twitter-block").css("height", "100%");
   });
 });
