@@ -78,10 +78,10 @@
     }
   }
   
-  display: none !important;
+  display: none;
   @include mq($min, $tablet) {
-    display: block !important;
-    width: calc(100% - 570px) !important;
+    display: block;
+    width: calc(100% - 570px);
     margin-left: 40px;
   }
   
