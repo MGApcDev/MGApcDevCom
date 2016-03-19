@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
   // Modified, Credit to 
   // @(https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.yd0v5h41r)
   
-  $nav = $('nav#block-mgapcdev-mainnavigation');
-  var didScroll,
+  var $nav = $('nav#block-mgapcdev-mainnavigation'),
+      didScroll,
       lastScrollTop = 0,
       delta = 5,
       navbarHeight = $nav.outerHeight();
@@ -45,8 +45,8 @@ jQuery(document).ready(function ($) {
   
   // Android emote --------------------------------------------------------------------------------
   var gifCount = drupalSettings.mgapcdev.android.gifCount;
-  $android = $('.android-emote');
-  $androidSpinner = $android.find('.spinner');
+  var $android = $('.android-emote');
+  var $androidSpinner = $android.find('.spinner');
   // Mobile browser check, Credit to @(http://stackoverflow.com/a/11381730)
   window.mobilecheck = function () {
     var check = false;
