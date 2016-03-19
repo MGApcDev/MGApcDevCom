@@ -2,6 +2,6 @@
 function mgapcdev_preprocess_page(&$build) {
   $build['#attached']['drupalSettings']['mgapcdev']['github']['clientId'] = '';
   $build['#attached']['drupalSettings']['mgapcdev']['github']['clientSecret'] = '';
-  $build['#attached']['drupalSettings']['mgapcdev']['android']['gifCount'] = 0;
+  $build['#attached']['drupalSettings']['mgapcdev']['android']['gifCount'] = 42;
 }
 ?>
