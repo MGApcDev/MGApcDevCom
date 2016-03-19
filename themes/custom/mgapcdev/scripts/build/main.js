@@ -46,9 +46,9 @@ function millisecondsToStr(a){"use strict";function b(a){return a>1?"s ago":" ag
   });
   
   // Android emote --------------------------------------------------------------------------------
-  var gifCount = drupalSettings.mgapcdev.android.gifCount;
-  var $android = $('.android-emote');
-  var $androidSpinner = $android.find('.spinner');
+  var gifCount = drupalSettings.mgapcdev.android.gifCount,
+      $android = $('.android-emote'),
+      $androidSpinner = $android.find('.spinner');
   // Mobile browser check, Credit to @(http://stackoverflow.com/a/11381730)
   window.mobilecheck = function () {
     var check = false;
@@ -72,7 +72,7 @@ function millisecondsToStr(a){"use strict";function b(a){return a>1?"s ago":" ag
   } else {
     loadEmote('src="/giffy/droid-head.png" class="mobile-droid"');
   }
-  $('.mobile-droid').click(function(){
+  $('.mobile-droid').click(function () {
     $androidSpinner.removeClass('fade-background-svg').css('position', 'relative');
     $android.find('img').remove();
     var id = getRandomInt(1, gifCount);
@@ -81,22 +81,22 @@ function millisecondsToStr(a){"use strict";function b(a){return a>1?"s ago":" ag
   
   // Initalize github widget ----------------------------------------------------------------------
   // Credit to @(https://github.com/caseyscarborough/github-activity)
-  var clientId = drupalSettings.mgapcdev.github.clientId;
-  var clientSecret = drupalSettings.mgapcdev.github.clientSecret;
+  var clientId = drupalSettings.mgapcdev.github.clientId,
+      clientSecret = drupalSettings.mgapcdev.github.clientSecret;
   
   GitHubActivity.feed({
     username: "MGApcDev",
     selector: "#github-widget",
     limit: 6,
     clientId: clientId,
-    clientSecret: clientSecret,
+    clientSecret: clientSecret
   });
   
   // Twitter widget hack, remove photos from being displayed --------------------------------------
   // Modified, Credit to 
   // @(https://twittercommunity.com/t/auto-expand-photos-always-on-for-embedded-timeline/62510/28)
-  jQuery('.layout-content').on('DOMSubtreeModified propertychange',"#twitter-widget-0", function() {
-      jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
-      jQuery(".twitter-block").css("height", "100%");
+  jQuery('.layout-content').on('DOMSubtreeModified propertychange', "#twitter-widget-0", function () {
+    jQuery(".twitter-timeline").contents().find(".timeline-Tweet-media").css("display", "none");
+    jQuery(".twitter-block").css("height", "100%");
   });
 });
